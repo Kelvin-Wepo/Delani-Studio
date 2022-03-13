@@ -48,12 +48,13 @@
 }
 
 #services {
-    height: 50%;
+    height: 20%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    color: black;
+    color: white;
+    background-image: url(./assets/assets/backgrounds/s_image.jpg);
 }
 
 #mservices,
