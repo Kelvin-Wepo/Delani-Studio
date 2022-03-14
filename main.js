@@ -1,36 +1,44 @@
 $(document).ready(function() {
-    $('#design').click(function() {
-        $('#design-content').show(function() {
-            $('#design').hide('fast');
-        });
-    });
-    $('#design-content').click(function() {
-        $('#design').show(function() {
-            $('#design-content').hide('fast');
-        });
-    });
+    var elements=[1,2,3]
 
-    $('#dev').click(function() {
-        $('#dev-content').show(function() {
-            $('#dev').hide('fast');
+    elements.forEach((index)=>{
+        $('.content'+index).click(function() {
+            $('.hidden-content'+index).toggle()
+            $('.content'+index).toggle()
         });
-    });
-    $('#dev-content').click(function() {
-        $('#dev').show(function() {
-            $('#dev-content').hide('fast');
+        $('.hidden-content'+index).click(function() {
+            $('.content'+index).toggle()
+            $('.hidden-content'+index).toggle()
         });
-    });
+    })
 
-    $('#product').click(function() {
-        $('#product-content').show(function() {
-            $('#product').hide('fast');
-        });
-    });
-    $('#product-content').click(function() {
-        $('#product').show(function() {
-            $('#product-content').hide('fast');
-        });
-    });
+    // $('#design-content').click(function() {
+    //     $('#design').show(function() {
+    //         $('#design-content').hide('fast');
+    //     });
+    // });
+
+    // $('#dev').click(function() {
+    //     $('#dev-content').show(function() {
+    //         $('#dev').hide('fast');
+    //     });
+    // });
+    // $('#dev-content').click(function() {
+    //     $('#dev').show(function() {
+    //         $('#dev-content').hide('fast');
+    //     });
+    // });
+
+    // $('#product').click(function() {
+    //     $('#product-content').show(function() {
+    //         $('#product').hide('fast');
+    //     });
+    // });
+    // $('#product-content').click(function() {
+    //     $('#product').show(function() {
+    //         $('#product-content').hide('fast');
+    //     });
+    // });
 
     $('#work1').mouseenter(function() {
         $('.work-heading').filter('#work1-title').show("slow");
@@ -97,7 +105,7 @@ $(document).ready(function() {
             }
         });
     });
-})
+});
 
 ///
 
