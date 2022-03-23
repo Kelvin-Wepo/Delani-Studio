@@ -13,6 +13,7 @@ This project is a web application for Delani Studio that showcases details about
 +  JQuery,
 +  Markdown
 ## Project Live Link
+ + https://kelvin-wepo.github.io/Delani-Studio/
 ## Known Bugs
 All bugs that arised were fixed successfully.
 ## Setup & Installation Instructions
